@@ -1,0 +1,85 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles pour le fond noir et le titre */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    /* toute la largeur */
+}
+
+/* Styles pour le bloc central */
+#bloc-central {
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 80%;
+    text-align: center;
+}
+
+/* Styles pour les blocs "mode histoire" et "mode source" */
+.bloc-explicatif {
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: khaki;
+    width: 40%;
+    text-align: center;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    /*
+    padding: 1em 0; */
+
+    /* on définit la base du footer */
+    /* font-size: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; */
+}
+
+/* Styles pour le lien dans les blocs explicatifs */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Styles pour le lien au survol dans les blocs explicatifs */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media query pour la version mobile */
+@media (max-width: 767px) {
+
+    #bloc-central,
+    .bloc-explicatif {
+        width: 100%;
+    }
+}
