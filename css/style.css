@@ -47,6 +47,29 @@ header {
     text-align: center;
 }
 
+.bloc-explicatif img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+
+  .bloc-explicatif button {
+    z-index: 1;
+    background-color: #383434;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .bloc-explicatif button:hover {
+    background-color: #3e8e41;
+  }
+  
+
 /* Styles pour le footer */
 footer {
     background-color: black;
