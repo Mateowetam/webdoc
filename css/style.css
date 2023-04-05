@@ -17,18 +17,24 @@ body {
     flex-direction: column;
 }
 
-/* Styles pour le fond noir et le titre */
+.choix button {
+    margin-bottom: 1rem;
+}
+
+.choix button:first-child {
+    margin-top: 2rem;
+}
+
 header {
     background-color: black;
+    font-family: "Courier New", Courier, monospace;
     color: white;
     text-align: center;
     padding: 1em 0;
     width: 100%;
-    /* toute la largeur */
 }
 
-/* Styles pour le bloc central */
-#bloc-central {
+.bloc-central {
     margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
@@ -37,13 +43,17 @@ header {
     text-align: center;
 }
 
-/* Styles pour les blocs "mode histoire" et "mode source" */
+.blocexplication {
+    display: flex;
+    justify-content: space-around;
+}
+
 .bloc-explicatif {
-    margin: 1em auto;
+    margin: 1em;
     padding: 1em;
     border-radius: 10px;
     background-color: khaki;
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 
@@ -51,9 +61,9 @@ header {
     max-width: 100%;
     height: auto;
     margin: 5px;
-  }
+}
 
-  .bloc-explicatif button {
+.bloc-explicatif button {
     z-index: 1;
     background-color: #383434;
     color: white;
@@ -63,12 +73,12 @@ header {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-  }
-  
-  .bloc-explicatif button:hover {
+}
+
+.bloc-explicatif button:hover {
     background-color: #3e8e41;
-  }
-  
+}
+
 
 /* Styles pour le footer */
 footer {
@@ -77,14 +87,6 @@ footer {
     text-align: center;
     padding: 1em 0;
     margin-top: auto;
-    /*
-    padding: 1em 0; */
-
-    /* on définit la base du footer */
-    /* font-size: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; */
 }
 
 /* Styles pour le lien dans les blocs explicatifs */
@@ -98,11 +100,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Media query pour la version mobile */
 @media (max-width: 767px) {
 
-    #bloc-central,
+    .blocexplication {
+        flex-wrap: wrap;
+    }
+
     .bloc-explicatif {
-        width: 100%;
+        width: 90%;
     }
 }
