@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body {
@@ -26,12 +27,47 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: black;
     font-family: "Courier New", Courier, monospace;
     color: white;
     text-align: center;
     padding: 1em 0;
     width: 100%;
+}
+
+.logo-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    max-width: 130px;
+}
+
+.head-titre{
+    width: 50%;
+    background-color: rgb(112, 101, 101);
+}
+
+
+
+.blue {
+    color: blue;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: red;
 }
 
 .bloc-central {
@@ -63,20 +99,60 @@ header {
     margin: 5px;
 }
 
-.bloc-explicatif button {
-    z-index: 1;
+.bouton {
     background-color: #383434;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 5px 5px;
+    margin: 4px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
 }
 
-.bloc-explicatif button:hover {
-    background-color: #3e8e41;
+.bouton:hover {
+    background-color: #6e6c6f;
+}
+
+.box-centre {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.choix {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 20px;
+    /* background-color: #312727; */
+}
+
+.perso {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.perso-text {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.pres-perso {
+    margin-top: 30px;
+}
+
+
+.titre-haut {
+    text-align: center;
+    margin-top: 0;
 }
 
 

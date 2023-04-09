@@ -10,24 +10,39 @@
 
 <body>
     <header>
-        <h1>La France, où immigration rime avec désinformation</h1>
-        <p>Présentation du sujet</p>
-        <nav>
-            <button>Mode histoire</button>
-            <button>Mode sources</button>
-        </nav>
+        <div class="logo-titre">
+            <img src="../img/logo.png" alt="logo webdoc" class="logo">
+            <h1 class="titre">La France, où <span class="blue">imm</span>igra<span class="red">tion</span> rime avec
+                <span class="blue">désin</span>forma<span class="red">tion</span></h1>
+            <img src="../img/logo.png" alt="logo webdoc" class="logo">
+        </div>
+        <div class="head-titre">
+            <p>Mode Histoire</p>
+        </div>
     </header>
 
     <main>
-        <button class="retour">Retour à la page d'accueil</button>
-        <h2>Choisissez votre personnage :</h2>
-        <div class="choix">
-            <button>Personnage 1</button>
-            <button>Personnage 2</button>
+        <a href="index.html"><button class="bouton"> &#8592; Accueil</button></a>
+        <div class="box-centre">
+            <h2 class="titre-haut">Choisissez votre personnage :</h2>
+            <div class="choix">
+                <div>
+                    <a href="h2.html?personnage=p1">
+                        <img src="../img/p1.png" alt="perso1" class="perso">
+                    </a>
+                    <p class="perso-text">Katrielle</p>
+                </div>
+                <div>
+                    <a href="h2.html?personnage=p2">
+                        <img src="../img/p2.jpg" alt="perso2" class="perso">
+                    </a>
+                    <p class="perso-text">Layton</p>
+                </div>
+            </div>
+            <p class="pres-perso">Introduction à l'histoire...</p>
         </div>
-        <p>Introduction à l'histoire...</p>
     </main>
-    
+
     <footer>
         <p>Noah Beugnet - Samy Bastard-Delage - Mateo Mangado</p>
     </footer>
