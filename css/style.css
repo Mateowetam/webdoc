@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+/* ****************************** INDEX ******************************/
 
 body {
     height: 100vh;
@@ -18,70 +19,50 @@ body {
     flex-direction: column;
 }
 
-.choix button {
-    margin-bottom: 1rem;
-}
-
-.choix button:first-child {
-    margin-top: 2rem;
-}
-
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     background-color: black;
     font-family: "Courier New", Courier, monospace;
     color: white;
-    text-align: center;
     padding: 1em 0;
     width: 100%;
-}
-
-.logo-titre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
 .logo {
-    max-width: 130px;
+    max-width: 140px;
 }
-
-.head-titre{
-    width: 50%;
-    background-color: rgb(112, 101, 101);
-}
-
-
 
 .blue {
     color: blue;
 }
-
-.white {
-    color: white;
-}
-
 .red {
     color: red;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
 .bloc-central {
     margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
     background-color: lightgray;
-    width: 80%;
+    width: 70%;
     text-align: center;
 }
 
 .blocexplication {
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 
 .bloc-explicatif {
@@ -94,9 +75,7 @@ header {
 }
 
 .bloc-explicatif img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
+    max-width: 150px;
 }
 
 .bouton {
@@ -111,19 +90,26 @@ header {
     transition: background-color 0.1s ease-in-out;
 }
 
+.hautgauche {
+    align-self: flex-start;
+}
+
+
 .bouton:hover {
     background-color: #6e6c6f;
 }
 
 .box-centre {
     display: flex;
+    width: 70%;
     flex-direction: column;
     padding: 2%;
     align-items: center;
-    background-color: #f2f2f2;
-    margin: 20px;
+    background-color: #858386;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    align-self: center;
+    margin: auto;
 }
 
 .choix {
@@ -165,18 +151,10 @@ footer {
     margin-top: auto;
 }
 
-/* Styles pour le lien dans les blocs explicatifs */
-a {
-    color: black;
-    text-decoration: none;
-}
-
-/* Styles pour le lien au survol dans les blocs explicatifs */
-a:hover {
-    text-decoration: underline;
-}
-
 @media (max-width: 767px) {
+    .main{
+        margin: 30px;
+    }
 
     .blocexplication {
         flex-wrap: wrap;
@@ -184,5 +162,34 @@ a:hover {
 
     .bloc-explicatif {
         width: 90%;
+    }
+
+    .box-centre {
+        width: 90%;
+        padding: 2%;
+      }
+    
+      .choix {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
+    
+      .perso {
+        max-width: 100%;
+        max-height: 150px;
+        margin: 20px;
+      }
+    
+      .perso-text {
+        font-size: 14px;
+      }
+    
+      .pres-perso {
+        font-size: 14px;
+      }
+
+      .bloc-explicatif img {
+        max-width: 100px;
     }
 }
