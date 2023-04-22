@@ -84,7 +84,7 @@ main {
     border: none;
     border-radius: 5px;
     padding: 5px 5px;
-    margin: 4px;
+    margin: 8px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out;
@@ -130,10 +130,49 @@ main {
     margin-top: 10px;
     font-weight: bold;
 }
-
 .pres-perso {
     margin-top: 30px;
 }
+
+/* ****************************** H2 ******************************/
+.btnVF{
+    background-color: aquamarine;
+    padding: 1em 2em;
+    font-size: 14pt;
+    color: black;
+    cursor: pointer;
+}
+.btnVF:hover{
+    background-color: rgb(85, 163, 137);
+}
+
+.overlay{
+    background-color: rgb(212, 81, 81);
+    width: 100%;
+    display: none;
+}
+
+.popup{
+    position: fixed;
+    z-index: 999;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 20% auto;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 10px 12px 0 rgb(34, 34, 34);
+
+}
+
+.btnClose{
+    float: right;
+    cursor: pointer;
+}
+
+
 
 
 .titre-haut {

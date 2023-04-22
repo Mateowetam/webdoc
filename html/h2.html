@@ -18,14 +18,24 @@
     <main>
         <a href="h1.html"><button class="bouton hautgauche"> &#8592; Retour</button></a>
         <div class="box-centre">
-        <h2>Image du personnage :</h2>
+        <h2>Est-ce que cet extrait vidéo de M. Z*** du jj/mm/aaaa est vrai ou faux selon vous ?</h2>
         <img src="" alt="personnage sélectionné" class="perso" id="image-personnage">
-        <script src="../javaS/h2.js"></script>
+        <div class="btn">
+            <button id="btnV" class="btnVF">Vrai</button>
+            <button id="btnF" class="btnVF">Faux</button>
+        </div>
+        <div id="overlay" class="overlay">
+            <div id="popup" class="popup">
+                <h2>V/F <span id="btnClose" class="btnClose">&times;</span></h2>
+                <p id="popupText"></p>
+            </div>
+        </div>
     </main>
-
+    
     <footer>
         <p>Noah Beugnet - Samy Bastard-Delage - Mateo Mangado</p>
     </footer>
+    <script src="../javaS/h2.js"></script>
 </body>
 
 </html>
