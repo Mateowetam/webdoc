@@ -18,6 +18,7 @@ switch (personnage) {
 
 var btnVrai = document.getElementById('btnV');
 var btnFaux = document.getElementById('btnF');
+var index = 1;
 
 var overlay = document.getElementById('overlay');
 var btnClose = document.getElementById('btnClose');
@@ -30,6 +31,7 @@ btnVrai.addEventListener('click', function() {
 btnFaux.addEventListener('click', function() {
   openModal("Hélas non c'est bien vrai");
 });
+
 btnClose.addEventListener('click', closePopup);
 
 function openModal(text){
@@ -40,3 +42,23 @@ function openModal(text){
 function closePopup(){
   overlay.style.display = 'none';
 }
+
+btnVrai.addEventListener("click", function() {
+  if (btnVrai.dataset.correct === "true") {
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.add("correct");
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.remove("incorrect");
+  } else {
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.add("incorrect");
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.remove("correct");
+  }
+});
+
+btnFaux.addEventListener("click", function() {
+  if (btnFaux.dataset.correct === "true") {
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.add("correct");
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.remove("incorrect");
+  } else {
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.add("incorrect");
+    document.querySelector(".progress-bar-cell:nth-of-type(" + index + ")").classList.remove("correct");
+  }
+});
