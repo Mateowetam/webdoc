@@ -1,21 +1,3 @@
-// // Récupération du paramètre de l'URL
-// const queryString = window.location.search;
-// const urlParams = new URLSearchParams(queryString);
-// const personnage = urlParams.get('personnage');
-
-// // Affichage de l'image correspondante
-// const imageS = document.getElementById('image-personnage');
-// switch (personnage) {
-//   case 'p1':
-//     imageS.src = '../img/p1.png';
-//     imageS.alt = 'perso1';
-//     break;
-//   case 'p2':
-//     imageS.src = '../img/p2.png';
-//     imageS.alt = 'perso2';
-//     break;
-// }
-
 var btnVrai = document.getElementById('btnV');
 var btnFaux = document.getElementById('btnF');
 
@@ -60,6 +42,7 @@ function openModal(text){
 
 function closePopup(){
   overlay.style.display = 'none';
+  playVimeoVideo();
 }
 
 function changeBoxShadow(element, color) {
@@ -68,4 +51,8 @@ function changeBoxShadow(element, color) {
 
 function pauseVimeoVideo() {
   vimeoPlayer.pause();
+}
+
+function playVimeoVideo() {
+  vimeoPlayer.play();
 }

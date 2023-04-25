@@ -26,12 +26,25 @@ var btnClose = document.getElementById('btnClose');
 var popupText = document.getElementById('popupText');
 
 btnVrai.addEventListener('click', function() {
-  openModal("Et non c'est faux");
+  openModal("Et non c'est faux !");
+
+  if (btnVrai.dataset.correct === "true") {
+    changeBoxShadow(popup, '#4ccd46');
+  } else {
+    changeBoxShadow(popup, '#c54545');
+  }
 });
 
 btnFaux.addEventListener('click', function() {
-  openModal("En effet, c'est la bonne réponse !");
+  openModal("En effet, c'est factuellement faux ");
+
+  if (btnFaux.dataset.correct === "true") {
+    changeBoxShadow(popup, '#4ccd46');
+  } else {
+    changeBoxShadow(popup, '#c54545');
+  }
 });
+
 btnClose.addEventListener('click', closePopup);
 
 function openModal(text){
@@ -43,16 +56,6 @@ function closePopup(){
   overlay.style.display = 'none';
 }
 
-// récupère la valeur du paramètre "progress" depuis l'URL
-var urlParams = new URLSearchParams(window.location.search);
-var progress = urlParams.get('progress');
-
-// si la valeur existe et qu'elle contient au moins une case
-if (progress && progress.length >= 1) {
-  var firstCell = document.querySelector('.progress-bar-cell');
-  if (progress.charAt(0) === '1') {
-    firstCell.style.backgroundColor = 'green';
-  } else if (progress.charAt(0) === '0') {
-    firstCell.style.backgroundColor = 'red';
-  }
+function changeBoxShadow(element, color) {
+  element.style.setProperty('box-shadow', '10px 8px 0 ' + color + ', 0 0 0 ' + color);
 }

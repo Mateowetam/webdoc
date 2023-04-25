@@ -1,21 +1,3 @@
-// // Récupération du paramètre de l'URL
-// const queryString = window.location.search;
-// const urlParams = new URLSearchParams(queryString);
-// const personnage = urlParams.get('personnage');
-
-// // Affichage de l'image correspondante
-// const imageS = document.getElementById('image-personnage');
-// switch (personnage) {
-//   case 'p1':
-//     imageS.src = '../img/p1.png';
-//     imageS.alt = 'perso1';
-//     break;
-//   case 'p2':
-//     imageS.src = '../img/p2.png';
-//     imageS.alt = 'perso2';
-//     break;
-// }
-
 var btnVrai = document.getElementById('btnV');
 var btnFaux = document.getElementById('btnF');
 
@@ -28,7 +10,7 @@ var vimeoIframe = document.getElementById('vimeoPlayer');
 var vimeoPlayer = new Vimeo.Player(vimeoIframe);
 
 btnVrai.addEventListener('click', function() {
-  openModal("Et oui c'est vrai !");
+  openModal("Et non c'est faux !");
 
   if (btnVrai.dataset.correct === "true") {
     changeBoxShadow(popup, '#4ccd46');
@@ -40,7 +22,7 @@ btnVrai.addEventListener('click', function() {
 });
 
 btnFaux.addEventListener('click', function() {
-  openModal("Hélas non c'est bien vrai");
+  openModal("En effet, c'est factuellement faux ");
 
   if (btnFaux.dataset.correct === "true") {
     changeBoxShadow(popup, '#4ccd46');
@@ -60,6 +42,7 @@ function openModal(text){
 
 function closePopup(){
   overlay.style.display = 'none';
+  playVimeoVideo();
 }
 
 function changeBoxShadow(element, color) {
@@ -68,4 +51,8 @@ function changeBoxShadow(element, color) {
 
 function pauseVimeoVideo() {
   vimeoPlayer.pause();
+}
+
+function playVimeoVideo() {
+  vimeoPlayer.play();
 }
