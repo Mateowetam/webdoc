@@ -23,27 +23,35 @@
             <h1>Mode Sources</h1>
             <p>On va parler de caca</p>
             <div class="row">
-                <div class="bloc lien">1</div>
-                <div class="bloc lien">2</div>
+                <button class="bloc lien" data-explic="1">1</button>
+                <button class="bloc lien" data-explic="2">2</button>
+                <div id="overlay" class="overlay">
+                    <div id="popup" class="popup">
+                        <h2>Explication :<span id="btnClose" class="btnClose">&times;</span></h2>
+                        <p id="popupText" class="popupP">Texte par défaut</p>
+                        <button id="backToQuizz" class="bouton bouton-gauche">Revenir à la question du quizz</button>
+                      </div>
+                </div>
             </div>
             <div class="row">
-                <div class="bloc lien">3</div>
-                <div class="bloc lien">4</div>
+                <button id="e3" class="bloc lien">3</button>
+                <button id="e4" class="bloc lien">4</button>
             </div>
             <div class="row">
-                <div class="bloc lien">5</div>
-                <div class="bloc lien">6</div>
+                <button id="e5" class="bloc lien">5</button>
+                <button id="e6" class="bloc lien">6</button>
             </div>
             <div class="row">
-                <div class="bloc lien">7</div>
-                <div class="bloc lien">8</div>
+                <button id="e7" class="bloc lien">7</button>
+                <button id="e8" class="bloc lien">8</button>
             </div>
-    </div>
-</main>
+        </div>
+    </main>
 
     <footer>
         <p>Noah Beugnet - Samy Bastard-Delage - Mateo Mangado</p>
     </footer>
+    <script src="../javaS/explic.js"></script>
 </body>
 
 </html>
