@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Mode Histoire</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="aHead">
+            <h1>La France, où <span class="blue">imm</span>igra<span class="red">tion</span> rime avec
+                <span class="blue">désin</span>forma<span class="red">tion</span>
+            </h1>
+        </a>
+    </header>
+
+    <main>
+        <table class="progress-bar">
+            <tr>
+                <td class="progress-bar-cell activ"><a href="h2.html" class="lien">1</a></td>
+                <td class="progress-bar-cell activ"><a href="h3.html" class="lien">2</a></td>
+                <td class="progress-bar-cell activ"><a href="h3.html" class="lien">3</a></td>
+                <td class="progress-bar-cell activ"><a href="h3.html" class="lien">4</a></td>
+                <td class="progress-bar-cell activ"><a href="#" class="lien">5</a></td>
+            </tr>
+        </table>
+        
+        <button class="bouton hautgauche" onclick="history.back()"> &#8592; Retour</button>
+        <div class="box-centre">
+            <h1>Question 5</h1>
+            <h2 class="espace">Est-ce que cet extrait vidéo de M. Z*** du jj/mm/aaaa est vrai ou faux selon vous ?</h2>
+            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/820936968?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="btn">
+            <button id="btnV" class="btnVF">Vrai</button>
+            <button id="btnF" class="btnVF" data-correct="true">Faux</button>
+        </div>
+        <div id="overlay" class="overlay">
+            <div id="popup" class="popup">
+                <h2>FAUX <span id="btnClose" class="btnClose">&times;</span></h2>
+                <p id="popupText" class="popupText"></p>
+                <p class="popupP">En effet, blablabla</p>
+                <a href="explic.html?explic=5&from=h6"><button class="bouton bouton-gauche">Plus d'informations</button></a>
+                <a href="h7.html"><button class="bouton">Finir le quizz</button></a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Noah Beugnet - Samy Bastard-Delage - Mateo Mangado</p>
+    </footer>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="../javaS/questF.js"></script>
+</body>
+
+</html>

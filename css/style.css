@@ -4,12 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
+/* ****************************** INDEX ******************************/
 
 body {
     height: 100vh;
     width: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(95, 92, 92);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -17,35 +20,258 @@ body {
     flex-direction: column;
 }
 
-/* Styles pour le fond noir et le titre */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
+    font-family: "Courier New", Courier, monospace;
     color: white;
-    text-align: center;
     padding: 1em 0;
     width: 100%;
-    /* toute la largeur */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
-/* Styles pour le bloc central */
-#bloc-central {
+.aHead {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.titre-haut {
+    text-align: center;
+    margin-top: 0;
+}
+
+.logo {
+    max-width: 140px;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.progress-bar {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 20px;
+    background-color: #383838;
+    height: 20px;
+}
+
+.progress-bar-cell {
+    width: 20%;
+    height: 20px;
+    background-color: #395081;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.activ{
+    background-color: #587ac4;
+}
+.lien {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bloc-central {
     margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
     background-color: lightgray;
-    width: 80%;
+    width: 70%;
     text-align: center;
 }
 
-/* Styles pour les blocs "mode histoire" et "mode source" */
+.blocexplication {
+    width: 70%;     
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
 .bloc-explicatif {
-    margin: 1em auto;
+    margin: 1em;
     padding: 1em;
     border-radius: 10px;
     background-color: khaki;
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
+
+.bloc-explicatif img {
+    max-width: 150px;
+}
+
+.bouton {
+    background-color: #383434;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.hautgauche {
+    align-self: flex-start;
+}
+
+
+.bouton:hover {
+    background-color: #6e6c6f;
+}
+
+.box-centre {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    background-color: #b6b0b0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    align-self: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.choix {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 20px;
+    /* background-color: #312727; */
+}
+
+.perso {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.perso-text {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.pres-perso {
+    margin-top: 30px;
+}
+
+/* ****************************** H2 ******************************/
+.btnVF {
+    background-color: rgb(73, 182, 145);
+    padding: 1em 2em;
+    font-size: 14pt;
+    color: black;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.btnVF:hover {
+    background-color: rgb(85, 163, 137);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    z-index: 999;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 10px 12px 0 rgb(136, 224, 105);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup h2 {
+    text-align: center;
+}
+.popup button {
+    float: right;
+}
+.popupText {
+    text-align: center;
+}
+.popupP {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.popup button.bouton-gauche {
+    float: left;
+}
+
+.btnClose {
+    float: right;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.espace{
+    margin: 15px;
+}
+
+/* ****************************** explic ******************************/
+.row {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 15px;
+    margin-bottom: 10px;
+}
+
+.bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 50px;
+    background-color: #587ac4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.bloc:nth-child(odd) {
+    background-color: #4ccd46;
+}
+
+
+
 
 /* Styles pour le footer */
 footer {
@@ -54,32 +280,47 @@ footer {
     text-align: center;
     padding: 1em 0;
     margin-top: auto;
-    /*
-    padding: 1em 0; */
-
-    /* on définit la base du footer */
-    /* font-size: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; */
 }
 
-/* Styles pour le lien dans les blocs explicatifs */
-a {
-    color: black;
-    text-decoration: none;
-}
-
-/* Styles pour le lien au survol dans les blocs explicatifs */
-a:hover {
-    text-decoration: underline;
-}
-
-/* Media query pour la version mobile */
 @media (max-width: 767px) {
+    .main {
+        margin: 30px;
+    }
 
-    #bloc-central,
+    .blocexplication {
+        flex-wrap: wrap;
+    }
+
     .bloc-explicatif {
-        width: 100%;
+        width: 90%;
+    }
+
+    .box-centre {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .choix {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .perso {
+        max-width: 100%;
+        max-height: 150px;
+        margin: 20px;
+    }
+
+    .perso-text {
+        font-size: 14px;
+    }
+
+    .pres-perso {
+        font-size: 14px;
+    }
+
+    .bloc-explicatif img {
+        max-width: 100px;
     }
 }
