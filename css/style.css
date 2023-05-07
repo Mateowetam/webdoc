@@ -60,6 +60,15 @@ header {
     margin: 0 auto;
 }
 
+.logo4 {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo4-img {
+    max-width: 20%;
+}
+
 .logo-link {
     display: inline-block;
 }
@@ -286,6 +295,11 @@ main {
 
 .espace {
     margin: 15px;
+}
+
+.btnP{
+    display: flex;
+    margin-top: 2em;
 }
 
 /* ****************************** explic ******************************/
