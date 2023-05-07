@@ -22,7 +22,7 @@ btnVrai.addEventListener('click', function() {
 });
 
 btnFaux.addEventListener('click', function() {
-  openModal("Hélas non c'est bien vrai");
+  openModal("Et non c'est bien vrai !");
 
   if (btnFaux.dataset.correct === "true") {
     changeBoxShadow(popup, '#4ccd46');

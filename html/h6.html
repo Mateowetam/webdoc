@@ -30,13 +30,20 @@
         
         <button class="bouton hautgauche" onclick="history.back()"> &#8592; Retour</button>
         <div class="box-centre">
-            <h1>Question 5</h1>
-            <h2 class="espace">Est-ce que cet extrait vidéo de M. Z*** du jj/mm/aaaa est vrai ou faux selon vous ?</h2>
-            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/820936968?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <div class="btn">
-            <button id="btnV" class="btnVF">Vrai</button>
-            <button id="btnF" class="btnVF" data-correct="true">Faux</button>
-        </div>
+            <h1 class="textOk big">5) Chiffres-clefs </h1>
+            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Cocquerel du jj/mm/aaaa est vrai ou faux selon
+                vous ?</p>
+            <iframe id="vimeoPlayer"
+                src="https://player.vimeo.com/video/820936968?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1"
+                width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div>
+                <a href="#" id="btnV" class="btnVF">
+                    <img src="/img/vrai.png" alt="Vrai" class="btnVF-img">
+                </a>
+                <a href="#" id="btnF" class="btnVF" data-correct="true">
+                    <img src="/img/faux.png" alt="Faux" class="btnVF-img">
+                </a>
+            </div>
         <div id="overlay" class="overlay">
             <div id="popup" class="popup">
                 <h2>FAUX <span id="btnClose" class="btnClose">&times;</span></h2>

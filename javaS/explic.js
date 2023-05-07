@@ -3,9 +3,17 @@ var btnE = document.getElementsByClassName("bloc lien");
 var overlay = document.getElementById('overlay');
 var btnClose = document.getElementById('btnClose');
 var popup = document.getElementById('popup');
+var recap1 = document.getElementById('recap1');
+var recap2 = document.getElementById('recap2');
+var recap3 = document.getElementById('recap3');
+var recap4= document.getElementById('recap4');
+var recap5 = document.getElementById('recap5');
+var recap6 = document.getElementById('recap6');
+var recap7 = document.getElementById('recap7');
+var recap8 = document.getElementById('recap8');
 
+var recaps = [recap1, recap2, recap3, recap4, recap5, recap6, recap7, recap8];
 var fromQuizz = false;
-
 
 for (var i = 0; i < btnE.length; i++) {
   btnE[i].addEventListener('click', function (event) {
@@ -13,30 +21,43 @@ for (var i = 0; i < btnE.length; i++) {
     var from = new URLSearchParams(window.location.search).get('from');
     var popupText = document.getElementById('popupText');
 
-    if (explicValue === "1") {
-      overlay.style.display = 'block';
-      changeBoxShadow(popup, '#c25631');
-      popupText.innerHTML = "Texte pour 1";
-      updateBackToQuizzButton(from);
-    } else if (explicValue === "2") {
-      overlay.style.display = 'block';
-      popupText.innerHTML = "Texte pour 2";
-      updateBackToQuizzButton(from);
-    }
+    recaps.forEach(function (recap) {
+      recap.style.display = 'none';
+    });
+
+    overlay.style.display = 'block';
+    recaps[explicValue - 1].style.display = 'block';
+    updateBackToQuizzButton(from);
   });
 }
 
+// for (var i = 0; i < btnE.length; i++) {
+//   btnE[i].addEventListener('click', function (event) {
+//     var explicValue = event.target.getAttribute('data-explic');
+//     var from = new URLSearchParams(window.location.search).get('from');
+//     var popupText = document.getElementById('popupText');
 
+//     overlay.style.display = 'block';
+//     recap[explicValue].style.display = 'block';
+//     updateBackToQuizzButton(from);
 
+//     if (explicValue === "1") {
+//       overlay.style.display = 'block';
+//       popupText.innerHTML = "Texte pour 1";
+//       recap1.style.display = 'block';
+//       updateBackToQuizzButton(from);
+//     } else if (explicValue === "2") {
+//       overlay.style.display = 'block';
+//       popupText.innerHTML = "Texte pour 2";
+//       updateBackToQuizzButton(from);
+//     }
+//   });
+// }
 
 btnClose.addEventListener('click', closePopup);
 function closePopup() {
   overlay.style.display = 'none';
   fromQuizz = false;
-}
-
-function changeBoxShadow(element, color) {
-  element.style.setProperty('box-shadow', '10px 8px 0 ' + color + ', 0 0 0 ' + color);
 }
 
 function showPopupBasedOnQueryParam() {

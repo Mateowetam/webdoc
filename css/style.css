@@ -44,10 +44,24 @@ header {
 .titre-haut {
     text-align: center;
     margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .logo {
     max-width: 140px;
+}
+
+.logo2 {
+    max-width: 70%;
+}
+
+.logo3 {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: inline-block;
 }
 
 .blue {
@@ -75,9 +89,10 @@ header {
     text-align: center;
 }
 
-.activ{
+.activ {
     background-color: #587ac4;
 }
+
 .lien {
     display: block;
     text-decoration: none;
@@ -103,11 +118,16 @@ main {
     text-align: center;
 }
 
+.bloc-central p {
+    margin-bottom: 1em;
+}
+
 .blocexplication {
-    width: 70%;     
+    width: 70%;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    text-align: center;
 }
 
 .bloc-explicatif {
@@ -119,8 +139,19 @@ main {
     text-align: center;
 }
 
-.bloc-explicatif img {
-    max-width: 150px;
+.textOk {
+    font-family: "Freemono", FreeMono, monospace;
+    font-weight: 300;
+    font-stretch: ultra-condensed;
+}
+
+.big{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.textOk p {
+    margin-bottom: 1em; 
 }
 
 .bouton {
@@ -156,6 +187,7 @@ main {
     align-self: center;
     margin: auto;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .choix {
@@ -183,17 +215,19 @@ main {
 
 /* ****************************** H2 ******************************/
 .btnVF {
-    background-color: rgb(73, 182, 145);
-    padding: 1em 2em;
+    display: inline-block;
+    padding: 0;
     font-size: 14pt;
     color: black;
     cursor: pointer;
     margin: 15px;
+    text-decoration: none;
 }
 
-.btnVF:hover {
-    background-color: rgb(85, 163, 137);
+.btnVF-img {
+    max-width: 110px;
 }
+
 
 .overlay {
     position: fixed;
@@ -215,20 +249,29 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: 90%;
 }
+
 .popup h2 {
     text-align: center;
 }
+
 .popup button {
     float: right;
 }
+
 .popupText {
     text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 1em;
 }
+
 .popupP {
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
+
 .popup button.bouton-gauche {
     float: left;
 }
@@ -241,7 +284,7 @@ main {
     font-weight: bold;
 }
 
-.espace{
+.espace {
     margin: 15px;
 }
 
@@ -270,7 +313,10 @@ main {
     background-color: #4ccd46;
 }
 
+.recap {
+    display: none;
 
+}
 
 
 /* Styles pour le footer */

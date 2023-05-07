@@ -29,21 +29,42 @@
         </table>
         <button class="bouton hautgauche" onclick="history.back()"> &#8592; Retour</button>
         <div class="box-centre">
-            <h1>Question 1</h1>
-            <h2 class="espace">Est-ce que cet extrait vidéo de M. Z*** du jj/mm/aaaa est vrai ou faux selon vous ?</h2>
-            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/820936968?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-
-            <div class="btn">
-                <button id="btnV" class="btnVF" data-correct="true">Vrai</button>
-                <button id="btnF" class="btnVF">Faux</button>
+            <h1 class="textOk big">1) Chiffres-clefs </h1>
+            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Cocquerel du jj/mm/aaaa est vrai ou faux selon
+                vous ?</p>
+            <iframe id="vimeoPlayer"
+                src="https://player.vimeo.com/video/823294338?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1"
+                width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div>
+                <a href="#" id="btnV" class="btnVF" data-correct="true">
+                    <img src="/img/vrai.png" alt="Vrai" class="btnVF-img">
+                </a>
+                <a href="#" id="btnF" class="btnVF">
+                    <img src="/img/faux.png" alt="Faux" class="btnVF-img">
+                </a>
             </div>
             <div id="overlay" class="overlay">
                 <div id="popup" class="popup">
-                    <h2>V/F <span id="btnClose" class="btnClose">&times;</span></h2>
+                    <span id="btnClose" class="btnClose">&times;</span>
                     <p id="popupText" class="popupText"></p>
-                    <p class="popupP">En effet, blablabla</p>
-                    <a href="explic.html?explic=1&from=h2"><button class="bouton bouton-gauche" data-explic="1">Plus d'informations</button></a>
+                    <p>
+                        Éric Coquerel a raison, il ne faut pas confondre les chiffres exorbitants des visas accordés et
+                        des personnes qui viennent sur notre territoire en tant que personne émigrée !
+                    </p>
+                    <p>
+                        Ainsi, en 2020 215 000 personnes sont entrées en France et 46 000 en sont sorties. Au total, le
+                        solde migratoire des immigrés s'établit à +169 000 personnes. Cette même année, 41 % d'immigrés
+                        arrivés en France sont nés en Afrique.
+                        La moyenne annuelle ne varie pas tant que ça, et si on enlève à ce chiffre les décès naturels ou
+                        non des personnes réfugiées en France, qui est difficilement évaluable, on se rapproche beaucoup
+                        plus des 130 000 personnes que d'autres chiffres plus élevés.
+                    </p>
+                    <p>
+                    Le plus difficile dans ces situations est que tous les chiffres annoncés sont factuels, mais ne
+                    désignent pas tous les mêmes personnes.
+                    </p>
+                    <a href="explic.html?explic=1&from=h2"><button class="bouton bouton-gauche" data-explic="1">Plus
+                            d'informations</button></a>
                     <a href="h3.html"><button class="bouton">Question suivante</button></a>
                 </div>
             </div>
