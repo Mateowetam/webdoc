@@ -77,6 +77,11 @@ header {
     pointer-events: auto;
 }
 
+.logoBtn{
+    margin-top: 2em;
+    max-width: 140px;
+    cursor: pointer;
+}
 
 .logo-link {
     display: inline-block;
@@ -164,7 +169,7 @@ main {
 }
 
 .text3{
-    font-family: "Courier", Courier, monospace;
+    font-family: Georgia, serif;
     font-weight: 200;
 }
 
