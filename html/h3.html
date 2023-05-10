@@ -30,12 +30,12 @@
         
         <button class="bouton hautgauche" onclick="history.back()"> &#8592; Retour</button>
         <div class="box-centre">
-            <h1 class="textOk big">2) Chiffres-clefs </h1>
-            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Cocquerel du jj/mm/aaaa est vrai ou faux selon
+            <h1 class="textOk big">2) Fuite des "Cerveaux" </h1>
+            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Bardella du 28/09/2021 est vrai ou faux selon
                 vous ?</p>
             <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/820936968?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             <div>
-                <a href="#" id="btnV" class="btnVF">
+                <a href="#" id="btnV" class="btnVF" data-correct="false">
                     <img src="/img/vrai.png" alt="Vrai" class="btnVF-img">
                 </a>
                 <a href="#" id="btnF" class="btnVF" data-correct="true">
@@ -43,12 +43,25 @@
                 </a>
             </div>
         <div id="overlay" class="overlay">
-            <div id="popup" class="popup">
+            <div id="popup" class="popup text3">
                 <span id="btnClose" class="btnClose">&times;</span>
                 <p id="popupText" class="popupText"></p>
-                <p>En effet, blablabla</p>
-                <a href="explic.html?explic=2&from=h3"><button class="bouton bouton-gauche">Plus d'informations</button></a>
-                <a href="h4.html"><button class="bouton">Question suivante</button></a>
+                <p>C’est fallacieux de sous-entendre que les populations les plus érudites partiraient de France tandis qu’uniquement des personnes sous-diplômées arriveraient sur notre territoire, mais c’est un des grands thèmes de l'extrême-droite dans notre pays.</p>
+                <p>
+                    Les Français émigrés sont, il est vrai, en moyenne plus éduqués que ceux restés en France, mais pour autant tous ces expatriés ne sont pas "Bac +10", pour reprendre les termes de Jordan Bardella. Ils peuvent aussi bien avoir un BTS (Bac +2), qu'une licence (Bac +3), un master (Bac +5) ou un doctorat (Bac +8).
+                </p>
+                <p>
+                    Certes, les détenteurs d'un CAP ou d'un BEP sont moins nombreux chez les immigrés (19,5%) que chez les non-immigrés (30%), mais la proportion de personnes ayant un diplôme supérieur à Bac +2 était un peu plus importante au sein des immigrés (21,7%) que parmi les non-immigrés (20,1 %)
+                </p>
+                <p>Ainsi cette “fuite des cerveaux” reste modérée, comme l'attestent les chiffres cités dans cette publication de la direction générale du Trésor datant de janvier, et le taux d'émigration de la France reste l'un des plus bas au sein de l'OCDE.</p>
+                <div class="divLog">
+                    <a href="explic.html?explic=2&from=h3" class="logo4">
+                        <img src="/img/plusInfo.png" alt="" class="logo4-img">
+                    </a>
+                    <a href="h4.html" class="logo4">
+                        <img src="/img/quSuiv.png" alt="bouton question suivante" class="logo4-img">
+                    </a>
+                </div> 
             </div>
         </div>
     </main>

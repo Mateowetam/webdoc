@@ -60,14 +60,23 @@ header {
     margin: 0 auto;
 }
 
+.divLog {
+    margin-top: 2em;
+    display: flex;
+}
+
 .logo4 {
     display: inline-block;
-    text-decoration: none;
+    pointer-events: none;
 }
 
 .logo4-img {
-    max-width: 20%;
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    pointer-events: auto;
 }
+
 
 .logo-link {
     display: inline-block;
@@ -154,6 +163,11 @@ main {
     font-stretch: ultra-condensed;
 }
 
+.text3{
+    font-family: "Courier", Courier, monospace;
+    font-weight: 200;
+}
+
 .big{
     font-weight: bold;
     font-size: 22px;
@@ -220,6 +234,21 @@ main {
 
 .pres-perso {
     margin-top: 30px;
+}
+
+.txtG{
+    text-align: left;
+}
+.txtGras{
+    font-weight: bold;
+}
+
+.txtM{
+    margin-top: 1em;
+}
+
+.mH{
+    margin-top: 2em;
 }
 
 /* ****************************** H2 ******************************/

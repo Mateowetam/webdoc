@@ -30,7 +30,7 @@
         <button class="bouton hautgauche" onclick="history.back()"> &#8592; Retour</button>
         <div class="box-centre">
             <h1 class="textOk big">1) Chiffres-clefs </h1>
-            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Cocquerel du jj/mm/aaaa est vrai ou faux selon
+            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Cocquerel du 25/11/2021 est vrai ou faux selon
                 vous ?</p>
             <iframe id="vimeoPlayer"
                 src="https://player.vimeo.com/video/823294338?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1"
@@ -44,35 +44,37 @@
                 </a>
             </div>
             <div id="overlay" class="overlay">
-                <div id="popup" class="popup">
+                <div id="popup" class="popup text3">
                     <span id="btnClose" class="btnClose">&times;</span>
                     <p id="popupText" class="popupText"></p>
-                    <p>
-                        Éric Coquerel a raison, il ne faut pas confondre les chiffres exorbitants des visas accordés et
+                    <p class="txtM">
+                        Éric Coquerel a raison, il ne faut pas confondre les chiffres des visas accordés et
                         des personnes qui viennent sur notre territoire en tant que personne émigrée !
                     </p>
-                    <p>
-                        Ainsi, en 2020 215 000 personnes sont entrées en France et 46 000 en sont sorties. Au total, le
-                        solde migratoire des immigrés s'établit à +169 000 personnes. Cette même année, 41 % d'immigrés
+                    <p class="txtM">
+                        <!-- <span class="txtGras">imm</span> -->
+                        Ainsi, en 2020 215 000 personnes sont entrées en France et 46 000 en sont sorties. Au total, <span class="txtGras">le
+                        solde migratoire des immigré.es s'établit à + 169 000 personnes</span>. Cette même année, 41 % d'immigrés
                         arrivés en France sont nés en Afrique.
                         La moyenne annuelle ne varie pas tant que ça, et si on enlève à ce chiffre les décès naturels ou
                         non des personnes réfugiées en France, qui est difficilement évaluable, on se rapproche beaucoup
-                        plus des 130 000 personnes que d'autres chiffres plus élevés.
+                        plus des <span class="txtGras">130 000 personnes</span> que d'autres chiffres plus élevés.
                     </p>
-                    <p>
-                        Le plus difficile dans ces situations est que tous les chiffres annoncés sont factuels, mais ne
-                        désignent pas tous les mêmes personnes.
+                    <p class="txtM">
+                        Le plus difficile dans ces situations est que tous les chiffres annoncés sont factuels, mais <span class="txtGras">ne
+                        désignent pas tous les mêmes personnes</span>.
                     </p>
-                    <div>
+                    <div class="divLog">
                         <a href="explic.html?explic=1&from=h2" class="logo4">
                             <img src="/img/plusInfo.png" alt="" class="logo4-img">
                         </a>
                         <a href="h3.html" class="logo4">
                             <img src="/img/quSuiv.png" alt="bouton question suivante" class="logo4-img">
                         </a>
-                    </div>
+                    </div>         
                 </div>
             </div>
+        </div>    
     </main>
 
     <footer>
