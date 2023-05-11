@@ -1,4 +1,4 @@
-var btnE = document.getElementsByClassName("bloc lien");
+var btnE = document.getElementsByClassName("blocExpl");
 
 var overlay = document.getElementById('overlay');
 var btnClose = document.getElementById('btnClose');
@@ -17,7 +17,7 @@ var fromQuizz = false;
 
 for (var i = 0; i < btnE.length; i++) {
   btnE[i].addEventListener('click', function (event) {
-    var explicValue = event.target.getAttribute('data-explic');
+    var explicValue = event.currentTarget.getAttribute('data-explic');
     var from = new URLSearchParams(window.location.search).get('from');
     var popupText = document.getElementById('popupText');
 
@@ -31,29 +31,6 @@ for (var i = 0; i < btnE.length; i++) {
   });
 }
 
-// for (var i = 0; i < btnE.length; i++) {
-//   btnE[i].addEventListener('click', function (event) {
-//     var explicValue = event.target.getAttribute('data-explic');
-//     var from = new URLSearchParams(window.location.search).get('from');
-//     var popupText = document.getElementById('popupText');
-
-//     overlay.style.display = 'block';
-//     recap[explicValue].style.display = 'block';
-//     updateBackToQuizzButton(from);
-
-//     if (explicValue === "1") {
-//       overlay.style.display = 'block';
-//       popupText.innerHTML = "Texte pour 1";
-//       recap1.style.display = 'block';
-//       updateBackToQuizzButton(from);
-//     } else if (explicValue === "2") {
-//       overlay.style.display = 'block';
-//       popupText.innerHTML = "Texte pour 2";
-//       updateBackToQuizzButton(from);
-//     }
-//   });
-// }
-
 btnClose.addEventListener('click', closePopup);
 function closePopup() {
   overlay.style.display = 'none';
@@ -65,7 +42,7 @@ function showPopupBasedOnQueryParam() {
   var explicToShow = searchParams.get('explic');
   
   if (explicToShow) {
-    var btn = document.querySelector('.bloc.lien[data-explic="' + explicToShow + '"]');
+    var btn = document.querySelector('.blocExpl[data-explic="' + explicToShow + '"]');
     if (btn) {
       btn.click();
     }

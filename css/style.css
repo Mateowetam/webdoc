@@ -12,7 +12,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: rgb(50 108 110);
+    background-color: rgb(51, 85, 136);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -78,8 +78,15 @@ header {
 }
 
 .logoBtn{
-    margin-top: 2em;
-    max-width: 140px;
+    margin: 2em;
+    max-width: 340px;
+    cursor: pointer;
+}
+
+.logoBtn2{
+    margin-left: 1em;
+    margin-top: 1em;
+    max-width: 120px;
     cursor: pointer;
 }
 
@@ -100,20 +107,23 @@ header {
     margin: 0 auto;
     margin-top: 10px;
     height: 20px;
-    background-color: #383838;
-    height: 20px;
+    border-radius: 5px;
 }
 
 .progress-bar-cell {
     width: 20%;
+    border: 1px solid #000000;
     height: 20px;
-    background-color: #395081;
+    background-color: #745b0f;
     border-radius: 5px;
     text-align: center;
+    font-family: "Freemono", FreeMono, monospace;
+    height: 2em;
+    line-height: 2em;
 }
 
 .activ {
-    background-color: #587ac4;
+    background-color: #c7c14c;
 }
 
 .lien {
@@ -136,7 +146,7 @@ main {
     margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
-    background-color: #7abd7c;
+    background-color: #e9e7e7;
     width: 70%;
     text-align: center;
 }
@@ -209,7 +219,7 @@ main {
     flex-direction: column;
     padding: 2%;
     align-items: center;
-    background-color: #626b7c;
+    background-color: #e9e7e7;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     align-self: center;
@@ -340,11 +350,24 @@ main {
 .row {
     display: flex;
     width: 70%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 15px;
     margin-bottom: 10px;
 }
 
+.blocExpl {
+    display: inline-block;
+    pointer-events: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.imgExpl{
+    max-width: 340px;
+    pointer-events: auto;
+    display: block;
+}
+/* 
 .bloc {
     display: flex;
     justify-content: center;
@@ -355,11 +378,9 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-}
+} */
 
-.bloc:nth-child(odd) {
-    background-color: #4ccd46;
-}
+
 
 .recap {
     display: none;
