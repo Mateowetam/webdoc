@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* ****************************** INDEX ******************************/
@@ -12,7 +12,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: rgb(95, 92, 92);
+    background-color: rgb(51, 85, 136);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -44,10 +44,54 @@ header {
 .titre-haut {
     text-align: center;
     margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .logo {
     max-width: 140px;
+}
+
+.logo2 {
+    max-width: 70%;
+}
+
+.logo3 {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.divLog {
+    margin-top: 2em;
+    display: flex;
+}
+
+.logo4 {
+    display: inline-block;
+    pointer-events: none;
+}
+
+.logo4-img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    pointer-events: auto;
+}
+
+.logoBtn{
+    margin: 2em;
+    max-width: 340px;
+    cursor: pointer;
+}
+
+.logoBtn2{
+    margin-left: 1em;
+    margin-top: 1em;
+    max-width: 120px;
+    cursor: pointer;
+}
+
+.logo-link {
+    display: inline-block;
 }
 
 .blue {
@@ -63,21 +107,25 @@ header {
     margin: 0 auto;
     margin-top: 10px;
     height: 20px;
-    background-color: #383838;
-    height: 20px;
+    border-radius: 5px;
 }
 
 .progress-bar-cell {
     width: 20%;
+    border: 1px solid #000000;
     height: 20px;
-    background-color: #395081;
+    background-color: #745b0f;
     border-radius: 5px;
     text-align: center;
+    font-family: "Freemono", FreeMono, monospace;
+    height: 2em;
+    line-height: 2em;
 }
 
-.activ{
-    background-color: #587ac4;
+.activ {
+    background-color: #c7c14c;
 }
+
 .lien {
     display: block;
     text-decoration: none;
@@ -98,16 +146,21 @@ main {
     margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
-    background-color: lightgray;
+    background-color: #e9e7e7;
     width: 70%;
     text-align: center;
 }
 
+.bloc-central p {
+    margin-bottom: 1em;
+}
+
 .blocexplication {
-    width: 70%;     
+    width: 70%;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    text-align: center;
 }
 
 .bloc-explicatif {
@@ -119,8 +172,24 @@ main {
     text-align: center;
 }
 
-.bloc-explicatif img {
-    max-width: 150px;
+.textOk {
+    font-family: "Freemono", FreeMono, monospace;
+    font-weight: 300;
+    font-stretch: ultra-condensed;
+}
+
+.text3{
+    font-family: Georgia, serif;
+    font-weight: 200;
+}
+
+.big{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.textOk p {
+    margin-bottom: 1em; 
 }
 
 .bouton {
@@ -150,12 +219,13 @@ main {
     flex-direction: column;
     padding: 2%;
     align-items: center;
-    background-color: #b6b0b0;
+    background-color: #e9e7e7;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     align-self: center;
     margin: auto;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .choix {
@@ -181,19 +251,36 @@ main {
     margin-top: 30px;
 }
 
+.txtG{
+    text-align: left;
+}
+.txtGras{
+    font-weight: bold;
+}
+
+.txtM{
+    margin-top: 1em;
+}
+
+.mH{
+    margin-top: 2em;
+}
+
 /* ****************************** H2 ******************************/
 .btnVF {
-    background-color: rgb(73, 182, 145);
-    padding: 1em 2em;
+    display: inline-block;
+    padding: 0;
     font-size: 14pt;
     color: black;
     cursor: pointer;
     margin: 15px;
+    text-decoration: none;
 }
 
-.btnVF:hover {
-    background-color: rgb(85, 163, 137);
+.btnVF-img {
+    max-width: 110px;
 }
+
 
 .overlay {
     position: fixed;
@@ -215,20 +302,29 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: 90%;
 }
+
 .popup h2 {
     text-align: center;
 }
+
 .popup button {
     float: right;
 }
+
 .popupText {
     text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 1em;
 }
+
 .popupP {
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
+
 .popup button.bouton-gauche {
     float: left;
 }
@@ -241,19 +337,42 @@ main {
     font-weight: bold;
 }
 
-.espace{
+.espace {
     margin: 15px;
+}
+
+.btnP{
+    display: flex;
+    margin-top: 2em;
 }
 
 /* ****************************** explic ******************************/
 .row {
     display: flex;
     width: 70%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 15px;
     margin-bottom: 10px;
 }
 
+.blocExpl {
+    display: inline-block;
+    pointer-events: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.imgExpl{
+    max-width: 340px;
+    pointer-events: auto;
+    display: block;
+}
+
+.imgExpl:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+/* 
 .bloc {
     display: flex;
     justify-content: center;
@@ -264,13 +383,14 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+} */
+
+
+
+.recap {
+    display: none;
+
 }
-
-.bloc:nth-child(odd) {
-    background-color: #4ccd46;
-}
-
-
 
 
 /* Styles pour le footer */
