@@ -70,3 +70,11 @@ function showBackToQuizzButton() {
 
 window.addEventListener('load', showPopupBasedOnQueryParam);
 window.addEventListener('load', showBackToQuizzButton);
+
+
+
+overlay.addEventListener('click', function(event) {
+  if (event.target == overlay) {
+    closePopup();
+  }
+});

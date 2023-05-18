@@ -56,3 +56,9 @@ function pauseVimeoVideo() {
 function playVimeoVideo() {
   vimeoPlayer.play();
 }
+
+overlay.addEventListener('click', function(event) {
+  if (event.target == overlay) {
+      closePopup();
+  }
+});
