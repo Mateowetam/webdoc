@@ -24,33 +24,37 @@
             <tr>
                 <td class="progress-bar-cell activ"><a href="h2.html" class="lien">1</a></td>
                 <td class="progress-bar-cell activ"><a href="h3.html" class="lien">2</a></td>
-                <td class="progress-bar-cell activ"><a href="h3.html" class="lien">3</a></td>
+                <td class="progress-bar-cell activ"><a href="h4.html" class="lien">3</a></td>
                 <td class="progress-bar-cell activ"><a href="#" class="lien">4</a></td>
                 <td class="progress-bar-cell">5</td>
             </tr>
         </table>
-
         <img src="/img/Retour.png" alt="" class="logoBtn2 hautgauche" onclick="history.back()">
         <div class="box-centre">
-            <h1 class="textOk big">Chiffres-clefs</h1>
-            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Cocquerel du jj/mm/aaaa est vrai ou faux selon
+            <h1 class="textOk big">Aide Médicale d'État</h1>
+            <p class="espace textOk">Est-ce que cet extrait vidéo de M.Panot du 6/12/2022 est vrai ou faux selon
                 vous ?</p>
             <iframe id="vimeoPlayer"
-                src="https://player.vimeo.com/video/820936968?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1"
+                src="https://player.vimeo.com/video/828034590?title=0&byline=0&portrait=0&autoplay=0&loop=0&autopause=0&controls=1&dnt=1&outro=hide&api=1"
                 width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             <div>
-                <a href="#" id="btnV" class="btnVF">
+                <a href="#" id="btnV" class="btnVF" data-correct="true">
                     <img src="/img/vrai.png" alt="Vrai" class="btnVF-img">
                 </a>
-                <a href="#" id="btnF" class="btnVF" data-correct="true">
+                <a href="#" id="btnF" class="btnVF">
                     <img src="/img/faux.png" alt="Faux" class="btnVF-img">
                 </a>
             </div>
             <div id="overlay" class="overlay">
-                <div id="popup" class="popup">
-                    <h2>FAUX <span id="btnClose" class="btnClose">&times;</span></h2>
+                <div id="popup" class="popup text3">
+                    <span id="btnClose" class="btnClose">&times;</span>
                     <p id="popupText" class="popupText"></p>
-                    <p class="popupP">En effet, blablabla</p>
+                    <!-- <span class="txtGras">imm</span> -->
+                    <p class="txtM">L'aide médicale de l'État (AME) est un dispositif permettant aux personnes en situation irrégulière de bénéficier d'un accès aux soins. Elle est attribuée sous conditions de résidence et de ressources. Pour la demander, un dossier est à remplir. Une fois attribuée, l'aide médicale de l'État est accordée pour 1 an et doit dont être renouvelée chaque année.</p>
+                    <p class="txtM">En effet, le budget de l'AME n'a jusqu'en 2022 jamais dépassé la barre du million d'euros, alors que le budget de l'assurance-maladie dépasse les 200 milliards. Le calcul se fait rapidement et annuellement depuis sa création, son buget oscille entre 0,3 et 0,6% du budget total de l'assurance-maladie.</p>
+                    <p class="txtM">De plus, on estime qu'environ 50% des personnes éligibles à cette aide n'y ont pas recours, soit par manque d'informations, soit par volonté de ne pas se soigner (pour trouver un emploi, ou par peur). Il est donc plus difficile de croire au «tourisme médical».</p>
+                    <p class="txtM">Les cas de fraudes sont minimes et sont souvent juste des cas exceptionnels de recel, qui ont pour vocation d'arnaquer les personnes voulant en bénéficier, et ces fraudes détectées ne représentent en moyenne qu'un pourcent du budget de l'AME. </p>
+                    <p class="txtM">Pour finir, les médecins et le ministère de la Santé s'accordent sur un point : l'AME coûte moins cher que sa suppression, car elle permet de lutter contre la propagation de certaines maladies sur le territoire.</p>
                     <div class="divLog">
                         <a href="explic.html?explic=4&from=h5" class="logo4">
                             <img src="/img/plusInfo.png" alt="" class="logo4-img">
@@ -67,7 +71,7 @@
         <p>Noah Beugnet - Samy Bastard-Delage - Mateo Mangado</p>
     </footer>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="../javaS/questF.js"></script>
+    <script src="../javaS/questV.js"></script>
 </body>
 
 </html>
