@@ -116,7 +116,7 @@ header {
 }
 
 .progress-bar-cell {
-    width: 20%;
+    width: 15%;
     color: aliceblue;
     border: 1px solid #000000;
     height: 20px;
@@ -414,6 +414,10 @@ footer {
 }
 
 @media (max-width: 767px) {
+
+    .imgExpl{
+        max-width: 90%;
+    }
     .main {
         margin: 30px;
     }
