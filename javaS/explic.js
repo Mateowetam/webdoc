@@ -10,10 +10,9 @@ var recap4= document.getElementById('recap4');
 var recap5 = document.getElementById('recap5');
 var recap6 = document.getElementById('recap6');
 var recap7 = document.getElementById('recap7');
-var recap8 = document.getElementById('recap8');
 
-var recaps = [recap1, recap2, recap3, recap4, recap5, recap6, recap7, recap8];
-var fromQuizz = false;
+var recaps = [recap1, recap2, recap3, recap4, recap5, recap6, recap7];
+var fromQuiz = false;
 
 for (var i = 0; i < btnE.length; i++) {
   btnE[i].addEventListener('click', function (event) {
@@ -27,14 +26,14 @@ for (var i = 0; i < btnE.length; i++) {
 
     overlay.style.display = 'block';
     recaps[explicValue - 1].style.display = 'block';
-    updateBackToQuizzButton(from);
+    updateBackToQuizButton(from);
   });
 }
 
 btnClose.addEventListener('click', closePopup);
 function closePopup() {
   overlay.style.display = 'none';
-  fromQuizz = false;
+  fromQuiz = false;
 }
 
 function showPopupBasedOnQueryParam() {
@@ -49,27 +48,27 @@ function showPopupBasedOnQueryParam() {
   }
 }
 
-function updateBackToQuizzButton(from) {
-  var backToQuizzButton = document.getElementById('backToQuizz');
-  if (fromQuizz) {
-    backToQuizzButton.style.display = 'inline-block';
-    backToQuizzButton.addEventListener('click', function () {
+function updateBackToQuizButton(from) {
+  var backToQuizButton = document.getElementById('backToQuiz');
+  if (fromQuiz) {
+    backToQuizButton.style.display = 'inline-block';
+    backToQuizButton.addEventListener('click', function () {
       window.location.href = from + '.html';
     });
   } else {
-    backToQuizzButton.style.display = 'none';
+    backToQuizButton.style.display = 'none';
   }
 }
 
-function showBackToQuizzButton() {
+function showBackToQuizButton() {
   var searchParams = new URLSearchParams(window.location.search);
   var from = searchParams.get('from');
-  fromQuizz = from !== null;
-  updateBackToQuizzButton(from);
+  fromQuiz = from !== null;
+  updateBackToQuizButton(from);
 }
 
 window.addEventListener('load', showPopupBasedOnQueryParam);
-window.addEventListener('load', showBackToQuizzButton);
+window.addEventListener('load', showBackToQuizButton);
 
 
 
